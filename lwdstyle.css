@@ -1,0 +1,153 @@
+﻿body {
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: silver;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+a {
+    color: #456583;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+li {
+    font-weight: 700;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+h1, h3, h5 {
+    padding: 5px;
+    text-align: center;
+    font-family: 'SofiaRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: #6c1b9a;
+}
+
+.h2, h2 {
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+p {
+    color: #0368be;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.col-lg-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 4%;
+}
+
+.wreath-pic {
+    width: 400;
+    height: 500;
+}
+
+
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #6c1b9a;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-image {
+  border-radius: 5%;
+}
+
+form {
+    display: inline;
+    text-align: left;
+}
+
+.col-sm-10 {
+    padding-left: 25em;
+    padding-right: 25em;
+}
+
+.album {
+    background-color: #456583;
+}
+
+.card {
+    margin: 7px;
+    padding: 5px;
+}
+
+i {
+    margin: 15px;
+    padding-left: 25px;
+}
+
