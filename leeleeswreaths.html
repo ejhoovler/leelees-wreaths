@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/sofia" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/sofia" type="text/css" />
     <link href="lwdstyle.css" rel="stylesheet" />
     <title>Leelee's Wreaths & Decor</title>
 </head>
@@ -53,7 +54,7 @@
                         </div>
 
                         <div class="col-lg-4">
-                            <img class="rounded-circle" src="pics/christmas13.jpg" alt="christmas13" width="140" height="140" />
+                            <img class="rounded-circle" src="pics/mix.jpg" alt="collage2" width="140" height="140" />
                             <h2>Uniquely Designed</h2>
                             <p>
                                 <a class="btn btn-secondary" href="#heading2" role="button">Details >></a>
@@ -61,7 +62,7 @@
                         </div>
 
                         <div class="col-lg-4">
-                            <img class="rounded-circle" src="pics/christmas16.jpg" alt="christmas16" width="140" height="140" />
+                            <img class="rounded-circle" src="pics/collage3.jpg" alt="collage3" width="140" height="140" />
                             <h2>A Perfect Gift</h2>
                             <p>
                                 <a class="btn btn-secondary" href="#heading3" role="button">Details >></a>
@@ -75,10 +76,10 @@
                         <div class="col-md-7">
                             <h3 class="featurette-heading" id="heading1">
                                 Custom Handmade
-                                <span class="text-muted">Wreaths</span>
+                                <span class="text-dark">Wreaths</span>
                             </h3>
                             <p class="lead">
-                                <em>Each one is made to perfection and no two ever look alike!</em>
+                                <em></em>
                             </p>
                         </div>
                         <div class="col-md-5">
@@ -90,11 +91,10 @@
                         <div class="col-md-7 order-md-2">
                             <h3 class="featurette-heading" id="heading2">
                                 Uniquely Designed,
-                                <span class="text-muted">Modern or Traditional</span>
+                                <span class="text-dark">Modern or Traditional</span>
                             </h3>
                             <p class="lead">
-                                <em>Whether it's deco mesh on a wire frame or floral on grapevine, for Christmas or for everyday, the possibilities are endless
-                                    and the personalization is forever!</em>
+                                <em></em>
                             </p>
                         </div>
                         <div class="col-md-5 order-md-1">
@@ -106,10 +106,10 @@
                         <div class="col-md-7">
                             <h3 class="featurette-heading" id="heading3">
                                 A Perfect Gift
-                                <span class="text-muted">For anyone and everyone!</span>
+                                <span class="text-dark">& Decoration!</span>
                             </h3>
                             <p class="lead">
-                                <em>Sentimental and heart-warming!</em>
+                                <em></em>
                             </p>
                         </div>
                         <div class="col-md-5">
@@ -119,112 +119,127 @@
                     <hr class="featurette-divider" />
                 </div>
 
-                <!--     CUSTOM ORDER FORM     -->
+                <!--     2ND TAB*****CUSTOM ORDER FORM     -->
                 <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order">
                     <h3>Custom Wreath Order Form</h3>
-                    <form>
+                    <hr>
+                    <form name="orderForm" action="" onsubmit="return validateForm()" method="POST">
                         <div class="form-group row">
                             <label for="name" class="col-md-2 col-form-label">Name:</label>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="name" placeholder="First & Last Name">
+                            <div class="controls col-md-6">
+                                <input type="text" name="fname" class="form-control" id="inputName" placeholder="Full Name" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="tel" class="col-md-2 col-form-label">Phone Number:</label>
-                            <div class="col-md-6">
-                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" />
+                            <div class="controls col-md-6">
+                                <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" />
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="inputEmail3" class="col-md-2 col-form-label">Email:</label>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            <div class="controls col-md-6">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                             </div>
                         </div>
-                        <!-- Wreath Options -->
-                        <fieldset class="form-group">
-                            <div class="row">
-                                <legend class="col-form-label col-md-2 pt-0">Frames:</legend>
-                                <div class="col-md-4">
-                                    <div class="form-check-inline">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="gridRadios1">
-                                            Wire
-                                        </label>
-                                    </div>
-                                    <div class="form-check-inline">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                        <label class="form-check-label" for="gridRadios2">
-                                            Grapevine
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label for="holidaySelection">Please choose a holiday:</label>
-                                    <select class="form-control" id="holidaySelection">
-                                        <option>Select one</option>
-                                        <option>Thanksgiving/Fall</option>
-                                        <option>Halloween</option>
-                                        <option>Spring/Summer</option>
-                                        <option>Christmas</option>
-                                    </select>
-                                </div>
-                        </fieldset>
-                        <!-- Option to add a letter -->
-                        <fieldset class="form-group">
-                            <div class="row">
-                                <legend class="col-form-label col-md-3">Would you like to add a letter?</legend>
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkNo" />
-                                    <label class="form-check-label" for="checkNo">No</label>
-                                </div>
-                                <div class="form-check-inline">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkYes" />
-                                    <label class="form-check-label" for="checkYes">Yes</label>
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control" id="letterSelect">
-                                        <option selected=""></option>
-                                        <option>A</option>
-                                        <option>B</option>
-                                        <option>C</option>
-                                        <option>D</option>
-                                        <option>E</option>
-                                        <option>F</option>
-                                        <option>G</option>
-                                        <option>H</option>
-                                        <option>I</option>
-                                        <option>J</option>
-                                        <option>K</option>
-                                        <option>L</option>
-                                        <option>M</option>
-                                        <option>N</option>
-                                        <option>O</option>
-                                        <option>V</option>
-                                        <option>Q</option>
-                                        <option>R</option>
-                                        <option>S</option>
-                                        <option>T</option>
-                                        <option>U</option>
-                                        <option>V</option>
-                                        <option>W</option>
-                                        <option>X</option>
-                                        <option>Y</option>
-                                        <option>Z</option>
-                                    </select>
-                                </div>
 
+                        <!-- Wreath Options -->
+                        <div class="form-row" id="wreathOptions">
+                            <div class="col-md-4">
+                                <div class="col-form-label">Please choose a frame type:</div>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div class="col-md-4">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="wired" value="one" checked>
+                                    <label class="form-check-label" for="wired">Wire</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="grapevine" value="two">
+                                    <label class="form-check-label" for="grapevine">Grapevine</label>
+                                </div>
                             </div>
-                        </fieldset>
-                        <div class="form-group row">
+                        </div>
+                        <div class="form-row" id="wreathOptions">
+                            <div class="col-md-4">
+                                <div class="col-form-label">What size would you like it to be?</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="smallFrame" value="one" checked>
+                                    <label class="form-check-label" for="smallFrame">12 inch</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="medFrame" value="two" checked>
+                                    <label class="form-check-label" for="medFrame">16 inch</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="lgFrame" value="three" checked>
+                                    <label class="form-check-label" for="lgFrame">24 inch</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="xlFrame" value="four" checked>
+                                    <label class="form-check-label" for="xlFrame">30 inch</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row" id="wreathOptions">
+                            <div class="col-md-4">
+                                <label for="holiday">What holiday/ occassion is it for?</label>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="custom-select-sm" id="formControl1">
+                                    <option>Thanksgiving/Fall</option>
+                                    <option>Halloween</option>
+                                    <option>Spring/Summer</option>
+                                    <option>Christmas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <label for="letterOption">Would you like to add an initial?</label>
+                            </div>
+
+                            <div class="col-md-4">
+                                <select class="custom-select-sm" id="formControl1">
+                                    <option selected="">Please Select</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                    <option>E</option>
+                                    <option>F</option>
+                                    <option>G</option>
+                                    <option>H</option>
+                                    <option>I</option>
+                                    <option>J</option>
+                                    <option>K</option>
+                                    <option>L</option>
+                                    <option>M</option>
+                                    <option>N</option>
+                                    <option>O</option>
+                                    <option>V</option>
+                                    <option>Q</option>
+                                    <option>R</option>
+                                    <option>S</option>
+                                    <option>T</option>
+                                    <option>U</option>
+                                    <option>V</option>
+                                    <option>W</option>
+                                    <option>X</option>
+                                    <option>Y</option>
+                                    <option>Z</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-8">
+                                <label for="formControl1">Questions, Comments, Requests?</label>
+                                <textarea class="form-control" id="formControl1" rows="2" placeholder="Please provide any special additions/ instructions here."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
                             <div class="col-sm-10">
                                 <button type="submit" class="btn btn-info">Submit</button>
                             </div>
@@ -232,95 +247,114 @@
                     </form>
                 </div>
 
-
-                <!--     GALLERY     -->
+                <!--    3RD TAB****** GALLERY     -->
                 <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery">
                     <h3>Photo Gallery</h3>
                     <div class="album py-5">
                         <div class="row">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="pics/christmas17.jpg" alt="rose gold" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Rose Gold</h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img class="card-img-top" src="pics/christmas6.jpg" alt="white and rose gold" />
                                 <div class="card-body">
                                     <h5 class="card-title">White and Rose Gold with Silver</h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
                                 </div>
                             </div>
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img class="card-img-top" src="pics/christmas7.jpg" alt="red and gold" />
                                 <div class="card-body">
                                     <h5 class="card-title">Red and Gold</h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="pics/beach_chrsms.jpg" alt="beach christmas wreath" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Beach Themed Wreath</h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
+                            <div class="card">
                                 <img class="card-img-top" src="pics/christmas8.jpg" alt="black and red mesh wreath" />
                                 <div class="card-body">
                                     <h5 class="card-title">Black and Red Diamond Shape</h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="pics/" alt="" />
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="pics/" alt="" />
+                            <div class="card">
+                                <img class="card-img-top" src="pics/beach_chrsms.jpg" alt="beach christmas wreath" />
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
+                                    <h5 class="card-title">Beach Themed Wreath</h5>
                                 </div>
                             </div>
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="pics/" alt="" />
+                            <div class="card">
+                                <img class="card-img-top" src="pics/christmas17.jpg" alt="rose gold" />
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
+                                    <h5 class="card-title">Rose Gold</h5>
                                 </div>
                             </div>
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="pics/" alt="" />
+                            <div class="card">
+                                <img class="card-img-top" src="pics/christmas13.jpg" alt="gold with red" />
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <button class="like-button"><i class="fa fa-thumbs-up"></i></button>
-                                    <span class="counter">0</span>
+                                    <h5 class="card-title">30" Gold w/ Red Accents</h5>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="row">
+                            <div class="card">
+                                <img class="card-img-top" src="pics/christmas9.jpg" alt="blue and silver" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Blue & Silver w/Initial</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/halloween2.jpg" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/halloween3.jpg" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card">
+                                <img class="card-img-top" src="" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/jackskellington.jpg" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/christmas15.jpg" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card">
+                                <img class="card-img-top" src="" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/" alt="" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+           
             <!--     FOOTER     -->
             <footer class="container">
                 <p class="float-right">
@@ -328,27 +362,46 @@
                 </p>
                 <div>
                     <p>
-                        Email:<a href="mail.google.com/mail">leeleeswreaths@gmail.com</a>
+                        Email:<a href="mail.google.com/mail"> leeleeswreaths@gmail.com</a>
                     </p>
                 </div>
-
             </footer>
         </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        <!-- BOOTSTRAP JAVASCRIPT   -->
+    <script>
+        $enable - shadows;
+        $('#order a').on('click', function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        function addLetter() {
+            if (checkNo == true) {
+                disa
+            }
+        }
 
-        <script>
+        /*var submitForm = confirm('Ready to submit order form?');
+        if (submitForm == true) {
+            alert("Thank you!!");
+        } else {
+            alert("");
+        }
+        */
 
-            $('#order a').on('click', function (e) {
-                e.preventDefault();
-                $(this).tab('show');
-            })
-
-        </script>
+        function validateForms() {
+            var x = document.forms["orderForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
 
 </body>
+
 </html>
