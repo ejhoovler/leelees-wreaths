@@ -22,17 +22,16 @@
             <div class="row">
                 <ul class="nav nav-tabs" id="nav-tab" role="tablist">
                     <li>
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home<i class="fa fa-home"></i></a>
                     </li>
                     <li>
-                        <a class="nav-item nav-link" id="#nav-order" data-toggle="tab" href="#order" role="tab" aria-controls="order" aria-selected="false">Custom Order</a>
+                        <a class="nav-item nav-link" id="#nav-order" data-toggle="tab" href="#order" role="tab" aria-controls="order" aria-selected="false">Custom Order<i class="fa fa-clipboard"></i></a>
                     </li>
                     <li>
-                        <a class="nav-item nav-link" id="#nav-gallery" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
+                        <a class="nav-item nav-link" id="#nav-gallery" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery<i class="fa fa-photo"></i></a>
                     </li>
                 </ul>
             </div>
-
         </nav>
     </div>
 
@@ -49,7 +48,7 @@
                             <img class="rounded-circle" src="pics/collage.jpg" alt="collage" width="140" height="140" />
                             <h2>Custom Handmade</h2>
                             <p>
-                                <a class="btn btn-secondary" href="#heading1" role="button">Details >></a>
+                                <a class="btn btn-info" href="#heading1" role="button">Details >></a>
                             </p>
                         </div>
 
@@ -57,15 +56,15 @@
                             <img class="rounded-circle" src="pics/mix.jpg" alt="collage2" width="140" height="140" />
                             <h2>Uniquely Designed</h2>
                             <p>
-                                <a class="btn btn-secondary" href="#heading2" role="button">Details >></a>
+                                <a class="btn btn-info" href="#heading2" role="button">Details >></a>
                             </p>
                         </div>
 
                         <div class="col-lg-4">
                             <img class="rounded-circle" src="pics/collage3.jpg" alt="collage3" width="140" height="140" />
-                            <h2>A Perfect Gift</h2>
+                            <h2>Satisfaction Guaranteed</h2>
                             <p>
-                                <a class="btn btn-secondary" href="#heading3" role="button">Details >></a>
+                                <a class="btn btn-info" href="#heading3" role="button">Details >></a>
                             </p>
                         </div>
                     </div>
@@ -76,10 +75,10 @@
                         <div class="col-md-7">
                             <h3 class="featurette-heading" id="heading1">
                                 Custom Handmade
-                                <span class="text-dark">Wreaths</span>
+                                <span class="text-info">Wreaths</span>
                             </h3>
                             <p class="lead">
-                                <em></em>
+                                <em>Premium materials are used and perfectly placed to create a beautiful, and even sentimental decoration that you will love to display year after year!</em>
                             </p>
                         </div>
                         <div class="col-md-5">
@@ -91,10 +90,10 @@
                         <div class="col-md-7 order-md-2">
                             <h3 class="featurette-heading" id="heading2">
                                 Uniquely Designed,
-                                <span class="text-dark">Modern or Traditional</span>
+                                <span class="text-info">Trendy or Traditional</span>
                             </h3>
                             <p class="lead">
-                                <em></em>
+                                <em>From classic, traditional colors to contemporary new styles! You name it and you'll get it! </em>
                             </p>
                         </div>
                         <div class="col-md-5 order-md-1">
@@ -105,11 +104,11 @@
                     <div class="row featurette">
                         <div class="col-md-7">
                             <h3 class="featurette-heading" id="heading3">
-                                A Perfect Gift
-                                <span class="text-dark">& Decoration!</span>
+                                Quality &
+                                <span class="text-info">Satisfaction!</span>
                             </h3>
-                            <p class="lead">
-                                <em></em>
+                            <p class="lead" id="guarantee">
+                                <em>Every detail is double and triple checked with the highest standards in mind! Satisfaction is 100% guaranteed! </em>
                             </p>
                         </div>
                         <div class="col-md-5">
@@ -122,72 +121,59 @@
                 <!--     2ND TAB*****CUSTOM ORDER FORM     -->
                 <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order">
                     <h3>Custom Wreath Order Form</h3>
+                    <div>
+                        <p class="text-dark">***Design Your Wreath Here***</p>
+                    </div>
                     <hr>
-                    <form name="orderForm" action="" onsubmit="return validateForm()" method="POST">
-                        <div class="form-group row">
-                            <label for="name" class="col-md-2 col-form-label">Name:</label>
-                            <div class="controls col-md-6">
-                                <input type="text" name="fname" class="form-control" id="inputName" placeholder="Full Name" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="tel" class="col-md-2 col-form-label">Phone Number:</label>
-                            <div class="controls col-md-6">
-                                <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="inputEmail3" class="col-md-2 col-form-label">Email:</label>
-                            <div class="controls col-md-6">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                            </div>
-                        </div>
-
-                        <!-- Wreath Options -->
-                        <div class="form-row" id="wreathOptions">
+                    <form name="orderForm" action="" onsubmit="return validateName()" method="POST">
+                        <!-- WREATH FRAME OPTIONS -->
+                        <div class="form-row" id="frames">
                             <div class="col-md-4">
                                 <div class="col-form-label">Please choose a frame type:</div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-check-inline">
                                     <input class="form-check-input" type="radio" name="gridRadios" id="wired" value="one" checked>
-                                    <label class="form-check-label" for="wired">Wire</label>
+                                    <label class="form-check-label" for="wired">Wire +$6</label>
                                 </div>
                                 <div class="form-check-inline">
                                     <input class="form-check-input" type="radio" name="gridRadios" id="grapevine" value="two">
-                                    <label class="form-check-label" for="grapevine">Grapevine</label>
+                                    <label class="form-check-label" for="grapevine">Grapevine +$6</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row" id="wreathOptions">
+                        <!-- WREATH SIZE OPTIONS -->
+                        <div class="form-row" id="sizes">
                             <div class="col-md-4">
                                 <div class="col-form-label">What size would you like it to be?</div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="smallFrame" value="one" checked>
-                                    <label class="form-check-label" for="smallFrame">12 inch</label>
+                                    <input class="form-check-input" type="checkbox" id="smFrame" value="1">
+                                    <label class="form-check-label" for="smFrame">12" +$15</label>
                                 </div>
                                 <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="medFrame" value="two" checked>
-                                    <label class="form-check-label" for="medFrame">16 inch</label>
+                                    <input class="form-check-input" type="checkbox" id="mdFrame" value="2">
+                                    <label class="form-check-label" for="mdFrame">16" +$25</label>
                                 </div>
                                 <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="lgFrame" value="three" checked>
-                                    <label class="form-check-label" for="lgFrame">24 inch</label>
+                                    <input class="form-check-input" type="checkbox" id="lgFrame" value="3">
+                                    <label class="form-check-label" for="lgFrame">24" +$35</label>
                                 </div>
                                 <div class="form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="xlFrame" value="four" checked>
-                                    <label class="form-check-label" for="xlFrame">30 inch</label>
+                                    <input class="form-check-input" type="checkbox" id="xlFrame" value="4">
+                                    <label class="form-check-label" for="xlFrame">30" +$45</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row" id="wreathOptions">
+                        <!-- OCCASSION OPTIONS -->
+                        <div class="form-row" id="holiday">
                             <div class="col-md-4">
-                                <label for="holiday">What holiday/ occassion is it for?</label>
+                                <div class="col-form-label">What holiday/ occassion is it for?</div>
                             </div>
                             <div class="col-md-4">
-                                <select class="custom-select-sm" id="formControl1">
+                                <select class="custom-select-md" id="formControl1">
+                                    <option selected="">Please Select</option>
                                     <option>Thanksgiving/Fall</option>
                                     <option>Halloween</option>
                                     <option>Spring/Summer</option>
@@ -195,14 +181,34 @@
                                 </select>
                             </div>
                         </div>
+                        <!-- STYLES -->
                         <div class="form-row">
                             <div class="col-md-4">
-                                <label for="letterOption">Would you like to add an initial?</label>
+                                <div class="col-form-label">Please choose your style:</div>
                             </div>
-
+                        </div>
+                        <div class="form-row" id="styles">
+                            <div class="col-sm-3 form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="style1" value="option1" />
+                                <label class="form-check-label" for="style1">Deco Mesh & Glitter +$15</label>
+                            </div>
+                            <div class="col-sm-3 form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="style2" value="option2" />
+                                <label class="form-check-label" for="style2">Feathers & Jewels +$10</label>
+                            </div>
+                            <div class="col-sm-3 form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="style3" value="option3" />
+                                <label class="form-check-label" for="style3">Ribbons & Floral +$10</label>
+                            </div>
+                        </div>
+                        <!-- ADD A LETTER -->
+                        <div class="form-row">
                             <div class="col-md-4">
-                                <select class="custom-select-sm" id="formControl1">
-                                    <option selected="">Please Select</option>
+                                <div class="col-form-label">Would you like to add an initial (+$5)?</div>
+                            </div>
+                            <div class="col-md-4" id="letter">
+                                <select class="custom-select-md" id="formControl1" onchange="letterOption()">
+                                    <option selected="">None</option>
                                     <option>A</option>
                                     <option>B</option>
                                     <option>C</option>
@@ -232,16 +238,210 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-row">
+                        <!-- SPECIAL COMMENTS/ REQUESTS -->
+                        <div class="form-row" id="comments">
                             <div class="col-md-8">
                                 <label for="formControl1">Questions, Comments, Requests?</label>
-                                <textarea class="form-control" id="formControl1" rows="2" placeholder="Please provide any special additions/ instructions here."></textarea>
+                                <textarea name="note" class="form-control" id="formControl1" rows="2" placeholder="Please provide any special requests or specific details you would like it to have here. Certain additional decorations may be added for an additional fee."></textarea>
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="col-sm-10">
-                                <button type="submit" class="btn btn-info">Submit</button>
+                        <hr>
+                        <!-- SHIPPING/ CUSTOMER INFO -->
+                        <div class="form-group row" id="shipping">
+                            <label for="fname" class="col-md-2 col-form-label"><i class="fa fa-user"></i>Name:</label>
+                            <div class="controls col-md-5">
+                                <input type="text" name="fname" class="form-control" id="formControl1" placeholder="Full Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="tel" class="col-md-2 col-form-label"><i class="fa fa-phone"></i>Phone:</label>
+                            <div class="controls col-md-5">
+                                <input type="tel" class="form-control" id="formControl1" placeholder="(999)999-9999" required />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-2 col-form-label"><i class="fa fa-envelope"></i>Email:</label>
+                            <div class="controls col-md-5">
+                                <input type="email" class="form-control" id="formControl1" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="addr" class="col-md-2 col-form-label">Address</label>
+                            <div class="controls col-md-5">
+                                <input type="text" class="form-control" id="formControl1" name="address" placeholder="123 Some St" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="city" class="col-md-2 col-form-label">City</label>
+                            <div class="controls col-md-4">
+                                <input type="text" class="form-control" id="formControl1" name="city" placeholder="Your City" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="state" class="col-md-2 col-form-label">State</label>
+                            <div class="col-md-2 controls">
+                                <select class="custom-select-md form-control" id="formControl1">
+                                    <option>AL</option>
+                                    <option>AK</option>
+                                    <option>AZ</option>
+                                    <option>AR</option>
+                                    <option>CA</option>
+                                    <option>CO</option>
+                                    <option>CT</option>
+                                    <option>DE</option>
+                                    <option>FL</option>
+                                    <option>GA</option>
+                                    <option>HI</option>
+                                    <option>ID</option>
+                                    <option>IL</option>
+                                    <option>IN</option>
+                                    <option>IA</option>
+                                    <option>KS</option>
+                                    <option>KY</option>
+                                    <option>LA</option>
+                                    <option>ME</option>
+                                    <option>MD</option>
+                                    <option>MA</option>
+                                    <option>MI</option>
+                                    <option>MN</option>
+                                    <option>MS</option>
+                                    <option>MO</option>
+                                    <option>MT</option>
+                                    <option>NE</option>
+                                    <option>NV</option>
+                                    <option>NH</option>
+                                    <option>NJ</option>
+                                    <option>NM</option>
+                                    <option>NY</option>
+                                    <option>NC</option>
+                                    <option>ND</option>
+                                    <option>OH</option>
+                                    <option>OK</option>
+                                    <option>OR</option>
+                                    <option>PA</option>
+                                    <option>RI</option>
+                                    <option>SC</option>
+                                    <option>SD</option>
+                                    <option>TN</option>
+                                    <option>TX</option>
+                                    <option>UT</option>
+                                    <option>VT</option>
+                                    <option>VA</option>
+                                    <option>WA</option>
+                                    <option>WV</option>
+                                    <option>WI</option>
+                                    <option>WY</option>
+                                    </select>
+                            </div>
+                            <label for="zip" class="col-md-2 col-form-label">Zip</label>
+                            <div class="col-md-2 controls">
+                                <input type="text" class="form-control" id="formControl1" name="zip" placeholder="10001" />
+                            </div>
+                        </div>
+                        <!-- PAYMENT INFO -->
+                        <!--<div class="">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Payments:</label>
+                            <div class="card-icons">
+                                <i class="fa fa-cc-visa"></i>
+                                <i class="fa fa-cc-amex"></i>
+                                <i class="fa fa-cc-mastercard"></i>
+                            </div>
+                            <div class="form-group row">
+                                <label for="cname" class="col-md-2 col-form-label">Name on Card</label>
+                                <div class="col-md-4 controls">
+                                    <input type="text" class="form-control" id="formControl1" name="cardname" placeholder="Cardholder">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="ccnum" class="col-md-2 col-form-label">Card Number</label>
+                                <div class="col-md-4 controls">
+                                    <input type="text" class="form-control" id="formControl1" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-2">
+                                    <label for="expiration" class="col-md-2 col-form-label">Expiration</label>
+                                </div>
+                                <div class="col-md-2 controls">
+                                    <input type="text" class="form-control" id="formControl1" name="expiration" placeholder="12/3456">
+                                </div>
+
+                                <div class="col-md-2">
+                                    <label for="cvv" class="col-md-2 col-form-label">CVV</label>
+                                </div>
+                                <div class="col-md-2 controls">
+                                    <input type="text" class="form-control" id="formControl1" name="cvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <label>
+                        <input type="checkbox" checked="checked" name="sameaddr"> Shipping address same as billing
+                    </label>-->
+
+                        <button type="button" class="btn btn-info float-right" data-toggle="modal" data-target=".cartModal">
+                        Checkout
+                    </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade cartModal" tabindex="-1" role="dialog" aria-labelledby="thankYouModal" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title text-center" id="modal">Thank You!</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <!--    NEED TO ADD STYLING, PHP AND APPLY FRAMEWORK TO OPTIONS PICKED IN CART    -->
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <form action="/action_page.php">
+                                                <div class="row">
+                                                    <div class="well col-sm-6">
+                                                        <h4>Payment</h4>
+                                                        <div class="payment-icons">
+                                                            <i class="fa fa-cc-visa" style="color: navy;"></i>
+                                                            <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                                                            <i class="fa fa-cc-amex" style="color: blue;"></i>
+                                                            <i class="fa fa-credit-card" style="color: black"></i>
+                                                        </div>
+                                                        <label for="cname">CardHolder</label>
+                                                        <input type="text" class="form-control" id="cname" name="cardName">
+                                                        <label for="num">CC Number</label>
+                                                        <input type="text" class="form-control" id="ccnum" name="cardNumber">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <label for="expiration">Expiration</label>
+                                                                <input type="text" class="form-control" id="expires" name="expiration">
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <label for="cvv">CVV</label>
+                                                                <input type="text" class="form-control" id="cvv" name="cvv">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="well col-sm-6">
+                                                        <h4>Cart <span class="price"><i class="fa fa-shopping-cart"></i></span></h4>
+                                                        <p><a href="#frames">Frame: </a> <span class="price">$6</span></p>
+                                                        <p><a href="#sizes">Size: </a> <span class="price" id="sizes"></span></p>
+                                                        <p><a href="#holiday">Holiday: </a> <span class="price"></span></p>
+                                                        <p><a href="#style">Style: </a> <span class="price" id="styles"></span></p>
+                                                    </div>
+                                                </div>
+                                                <h3>Your Total Is $
+                                                    <p id="total"></p>
+                                                </h3>
+                                            </form>
+                                        </div>
+                                        Your order will be shipped in 1-2 weeks! Your business is GREATLY appreciated!!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -250,6 +450,7 @@
                 <!--    3RD TAB****** GALLERY     -->
                 <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery">
                     <h3>Photo Gallery</h3>
+                    <p>(All pictures shown are of sold items. If you would like to purchase a similiar one, please visit the Custom Order page.)</p>
                     <div class="album py-5">
                         <div class="row">
                             <div class="card">
@@ -299,53 +500,53 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="card-img-top" src="pics/halloween2.jpg" alt="" />
+                                <img class="card-img-top" src="pics/christmas15.jpg" alt="gold with black initial" />
                                 <div class="card-body">
                                     <h5 class="card-title"></h5>
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="card-img-top" src="pics/halloween3.jpg" alt="" />
+                                <img class="card-img-top" src="pics/cardinals.jpg" alt="STL Cardinals theme" />
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="card">
-                                <img class="card-img-top" src="" alt="" />
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="pics/jackskellington.jpg" alt="" />
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="pics/christmas15.jpg" alt="" />
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
+                                    <h5 class="card-title">Go Cardinals! Christmas</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="card">
-                                <img class="card-img-top" src="" alt="" />
+                                <img class="card-img-top" src="pics/halloween2.jpg" alt="whimsical halloween theme" />
                                 <div class="card-body">
                                     <h5 class="card-title"></h5>
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="card-img-top" src="pics/" alt="" />
+                                <img class="card-img-top" src="pics/jackskellington.jpg" alt="'Nightmare Before Christmas' theme" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Jack Skellington</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/halloween3.jpg" alt="whimsical halloween theme" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Happy Halloween!</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card">
+                                <img class="card-img-top" src="pics/christmas3.jpg" alt="" />
                                 <div class="card-body">
                                     <h5 class="card-title"></h5>
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="card-img-top" src="pics/" alt="" />
+                                <img class="card-img-top" src="pics/fall.jpg" alt="fall grapevine" />
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="pics/fall2.jpg" alt="white willow" />
                                 <div class="card-body">
                                     <h5 class="card-title"></h5>
                                 </div>
@@ -354,7 +555,7 @@
                     </div>
                 </div>
             </div>
-           
+
             <!--     FOOTER     -->
             <footer class="container">
                 <p class="float-right">
@@ -362,7 +563,7 @@
                 </p>
                 <div>
                     <p>
-                        Email:<a href="mail.google.com/mail"> leeleeswreaths@gmail.com</a>
+                        Email:<a href="mail.google.com/mail"> leeleeswreaths@gmail.com <i class="fa fa-envelope"></i></a>
                     </p>
                 </div>
             </footer>
@@ -379,21 +580,7 @@
             $(this).tab('show');
         })
 
-        function addLetter() {
-            if (checkNo == true) {
-                disa
-            }
-        }
-
-        /*var submitForm = confirm('Ready to submit order form?');
-        if (submitForm == true) {
-            alert("Thank you!!");
-        } else {
-            alert("");
-        }
-        */
-
-        function validateForms() {
+        function validateName() {
             var x = document.forms["orderForm"]["fname"].value;
             if (x == "") {
                 alert("Name must be filled out");
