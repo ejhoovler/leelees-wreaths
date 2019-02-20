@@ -1,10 +1,12 @@
-﻿body {
+﻿@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+body {
     margin: 0;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    height: 100%;
+    padding: 0;
     box-sizing: border-box;
     display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Berkshire Swash';
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
     text-align: center;
@@ -18,20 +20,14 @@
     box-sizing: border-box;
 }
 
-div {
-    display: block;
-}
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+.jumbotron {
+    box-shadow: 4px 4px 6px #d0e6f9;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(3, 104, 190, 1) 34%, rgba(187, 186, 187, 1) 87%);
 }
 
 a {
-    color: #38a5fa;
+    color: aqua;
 }
 
 ul {
@@ -40,7 +36,9 @@ ul {
 }
 
 li {
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: none;
 }
 
 .container {
@@ -59,17 +57,23 @@ li {
     margin-left: -15px;
 }
 
-h1,
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-size: 60px;
+    font-weight: 500;
+    color: #d0e6f9;
+}
+
 h3,
 h5 {
     padding: 5px;
     text-align: center;
-    font-family: 'SofiaRegular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 3px black;
     font-weight: 600;
-    color: #6c1b9a;
+    color: #d0e6f9;
 }
 
-.h2,
 h2 {
     font-weight: 400;
     font-size: 2rem;
@@ -79,7 +83,7 @@ h2 {
 }
 
 p {
-    color: #0368be;
+    color: aqua;
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: center;
@@ -128,12 +132,28 @@ form {
     text-align: left;
 }
 
-.form-row {
+.form-group row {
     padding: 8px;
 }
 
 #formControl1 {
     background-color: #94bbe9;
+}
+
+.form-check-input {
+    color: #94bbe9;
+}
+
+textarea {
+    box-shadow: 3px 3px 5px #94bbe9;
+}
+
+label {
+    color: aqua;
+}
+
+#total {
+    padding: 25px;
 }
 
 .album {
@@ -150,4 +170,10 @@ form {
 i {
     margin: 15px;
     padding-left: 25px;
+}
+
+@keyframes spinning {
+    0% {
+        ;
+    }
 }
