@@ -1,7 +1,7 @@
 {
   "name": "leelees-wreaths",
   "version": "1.0.0",
-  "description": "photo gallery built with mdbootstrap",
+  "description": "photo gallery built with mdbootstrap and BE theme",
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --colors --config webpack.config.js",
@@ -14,9 +14,6 @@
   },
   "author": "ejhoovler",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ejhoovler/leelees-wreaths/issues"
-  },
   "homepage": "https://github.com/ejhoovler/leelees-wreaths#readme",
   "engines": {
     "node": ">=4.3.0",
