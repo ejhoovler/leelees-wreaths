@@ -1,1 +1,6 @@
 node_modules
+.sass-cache
+npm-debug.log
+coverage
+build.zip
+build
