@@ -24,6 +24,7 @@
     "lodash.throttle": "^4.1.1",
     "mdbootstrap": "^4.19.2",
     "prop-types": "^15.7.2",
+    "react-image-gallery": "^1.0.8",
     "react-swipeable": "^6.0.1",
     "resize-observer-polyfill": "^1.5.1",
     "watchify": "^4.0.0"
