@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../styles/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../styles/css/gallery.css" />
+</head>
+
+<body>
+    <!--Main Navigation-->
+<header class="mb-5">
+  <!-- Jumbotron -->
+  <div class="p-3 text-center text-white" style="background-color: #131921">
+    <div class="container">
+      <div class="row">
+        <div
+             class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0"
+             >
+          <a href="#!" class="ml-md-2">
+            <img
+                 src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
+                 height="35"
+                 />
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <form class="d-flex input-group w-auto my-auto mb-3 mb-md-0">
+            <input
+                   autocomplete="off"
+                   type="search"
+                   class="form-control rounded"
+                   placeholder="Search"
+                   />
+            <span class="input-group-text border-0 d-none d-lg-flex"
+                  ><i class="fas fa-search text-white"></i
+              ></span>
+          </form>
+        </div>
+
+        <div
+             class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center"
+             >
+          <div class="d-flex">
+            <!-- Cart -->
+            <a class="text-reset mr-3" href="#">
+              <span><i class="fas fa-shopping-cart"></i></span>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                    >1</span
+                >
+            </a>
+
+            <!-- Notification -->
+            <div class="dropdown">
+              <a
+                 class="text-reset mr-3 dropdown-toggle hidden-arrow"
+                 href="#"
+                 id="navbarDropdownMenuLink"
+                 role="button"
+                 data-toggle="dropdown"
+                 aria-expanded="false"
+                 >
+                <i class="fas fa-bell"></i>
+              </a>
+              <ul
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="navbarDropdownMenuLink"
+                  >
+                <li><a class="dropdown-item" href="#">Some news</a></li>
+                <li><a class="dropdown-item" href="#">Another news</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Languages -->
+            <div class="dropdown">
+              <a
+                 class="text-reset dropdown-toggle mr-3 hidden-arrow"
+                 href="#"
+                 id="navbarDropdown"
+                 role="button"
+                 data-toggle="dropdown"
+                 aria-expanded="false"
+                 >
+                <i class="united kingdom flag m-0"></i>
+              </a>
+              <ul
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="navbarDropdown"
+                  >
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="united kingdom flag"></i>English
+                    <i class="fa fa-check text-success ml-2"></i
+                      ></a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="poland flag"></i>Polski</a
+                    >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="china flag"></i>中文</a
+                    >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="japan flag"></i>日本語</a
+                    >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="germany flag"></i>Deutsch</a
+                    >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="france flag"></i>Français</a
+                    >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="spain flag"></i>Español</a
+                    >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="russia flag"></i>Русский</a
+                    >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                     ><i class="portugal flag"></i>Português</a
+                    >
+                </li>
+              </ul>
+            </div>
+
+            <!-- User -->
+            <div class="dropdown">
+              <a
+                 class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow"
+                 href="#"
+                 id="navbarDropdownMenuLink"
+                 role="button"
+                 data-toggle="dropdown"
+                 aria-expanded="false"
+                 >
+                <img
+                     src="https://mdbootstrap.com/img/new/avatars/1.jpg"
+                     class="rounded-circle"
+                     height="22"
+                     alt=""
+                     loading="lazy"
+                     />
+              </a>
+              <ul
+                  class="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="navbarDropdownMenuLink"
+                  >
+                <li><a class="dropdown-item" href="#">My profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+  <!-- Navbar -->
+  <nav
+       class="navbar navbar-expand-lg navbar-dark"
+       style="background-color: #232f3e"
+       >
+    <!-- Container wrapper -->
+    <div
+         class="container justify-content-center justify-content-md-between"
+         >
+      <!-- Left links -->
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item mr-2 mr-lg-0">
+          <a
+             class="nav-link"
+             href="#"
+             role="button"
+             data-toggle="sidenav"
+             data-target="#sidenav-1"
+             class="btn shadow-0 p-0 mr-3"
+             aria-controls="#sidenav-1"
+             aria-haspopup="true"
+             >
+            <i class="fas fa-bars mr-1"></i>
+            <span>Categories</span>
+          </a>
+        </li>
+        <li class="nav-item mr-2 mr-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Bestsellers</a>
+        </li>
+        <li class="nav-item mr-2 mr-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Inspirations</a>
+        </li>
+        <li class="nav-item mr-2 mr-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item mr-2 mr-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <button class="btn btn-outline-light" type="button">
+        Download app<i class="fas fa-download ml-2"></i>
+      </button>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Sidenav -->
+  <div
+       id="sidenav-1"
+       class="sidenav"
+       role="navigation"
+       data-hidden="true"
+       data-accordion="true"
+       >
+    <ul class="sidenav-menu">
+      <li class="sidenav-item">
+        <a class="sidenav-link"
+           ><i class="fas fa-layer-group pr-3"></i><span>Categories</span></a
+          >
+        <ul class="sidenav-collapse show">
+          <li class="sidenav-item">
+            <a class="sidenav-link">Dresses</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Shirts</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Jeans</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Shoes</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Accessories</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Jewelry</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link"
+           ><i class="fas fa-gem pr-3"></i><span>Brands</span></a
+          >
+        <ul class="sidenav-collapse">
+          <li class="sidenav-item">
+            <a class="sidenav-link">Brand 1</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Brand 2</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Brand 3</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Brand 4</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link"
+           ><i class="fas fa-gift pr-3"></i><span>Discounts</span></a
+          >
+        <ul class="sidenav-collapse">
+          <li class="sidenav-item">
+            <a class="sidenav-link">-70%</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">-50%</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Any</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link"
+           ><i class="fas fa-fire-alt pr-3"></i><span>Popular</span></a
+          >
+        <ul class="sidenav-collapse">
+          <li class="sidenav-item">
+            <a class="sidenav-link">Jewelry</a>
+          </li>
+          <li class="sidenav-item">
+            <a class="sidenav-link">Snickers</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidenav-item">
+        <a class="sidenav-link"
+           ><i class="fab fa-hotjar pr-3"></i
+          ><span>Today's bestseller</span></a
+          >
+        <div class="card mx-3">
+          <div class="bg-image hover-zoom ripple" data-ripple-color="light">
+            <img
+                 src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).jpg"
+                 class="w-100"
+                 />
+            <a href="#!">
+              <div class="mask">
+                <div
+                     class="d-flex justify-content-start align-items-end h-100"
+                     >
+                  <h5><span class="badge bg-danger ml-2">-10%</span></h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div
+                     class="mask"
+                     style="background-color: rgba(251, 251, 251, 0.15)"
+                     ></div>
+              </div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a href="" class="text-reset"
+               ><p class="mb-2">Pink snickers</p></a
+              >
+            <p class="mb-0">
+              <s>$61.99</s><strong class="ml-2 text-danger">$50.99</strong>
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- Sidenav -->
+
+  <!-- Carousel wrapper -->
+  <div
+       id="intro-carousel"
+       class="carousel slide carousel-fade"
+       data-ride="carousel"
+       >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li
+          data-target="#carouselBasicExample"
+          data-slide-to="0"
+          class="active"
+          ></li>
+      <li data-target="#carouselBasicExample" data-slide-to="1"></li>
+      <li data-target="#carouselBasicExample" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#!" class="ripple" data-ripple-color="light">
+          <img
+               src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/lab/amazon-homepage/assets/assets/slide-1.jpg"
+               class="d-block w-100"
+               alt="..."
+               />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Epic daily deal</h5>
+          </div>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#!" class="ripple" data-ripple-color="light">
+          <img
+               src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/lab/amazon-homepage/assets/assets/slide-2.jpg"
+               class="d-block w-100"
+               alt="..."
+               />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Huge discounts</h5>
+          </div>
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#!" class="ripple" data-ripple-color="light">
+          <img
+               src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/lab/amazon-homepage/assets/assets/slide-3.jpg"
+               class="d-block w-100"
+               alt="..."
+               />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              <span class="bg-dark p-2 rounded">Up to 70% cheaper</span>
+            </h5>
+          </div>
+        </a>
+      </div>
+    </div>
+    <a
+       class="carousel-control-prev"
+       href="#intro-carousel"
+       role="button"
+       data-slide="prev"
+       >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a
+       class="carousel-control-next"
+       href="#intro-carousel"
+       role="button"
+       data-slide="next"
+       >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+  <!-- Carousel wrapper -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mb-5">
+  <div class="container">
+    <!--Section: Featured-->
+    <section>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Coming soon from The Drop</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/horizontal/041.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Discounts of the week</strong>
+              </p>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/042.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Watches</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/043.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Photo cameras</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/044.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Backpacks</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/045.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Shoes</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Shop all</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Drones</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/horizontal/001.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >See more details</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Discounts of the month</strong>
+              </p>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/022.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Food</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/023.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Glasses</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/014.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Headphones</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/025.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Oldschool</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Shop all</a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Deals of the day</strong>
+              </p>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/052.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Trousers</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/053.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Headphones</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/054.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>T shirts</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/055.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Smartphones</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Shop all</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Dressed to chill</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/horizontal/013.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Customers' most-loved</strong>
+              </p>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/062.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Bicycles</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/063.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Clothes</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/064.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Smartphones</small>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <a href="#!" class="ripple" data-ripple-color="light">
+                    <img
+                         src="https://mdbootstrap.com/img/new/ecommerce/horizontal/065.jpg"
+                         class="w-100"
+                         alt=""
+                         />
+                  </a>
+                  <small>Cosmetics</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Shop all</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Surprise?</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/horizontal/002.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >See more details</a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Featured-->
+
+    <!--Section: Categories-->
+    <section class="mb-4">
+      <div class="card">
+        <div class="card-body">
+          <p><strong>All you need to get holiday ready</strong></p>
+
+          <div class="multi-carousel text-center">
+            <div class="multi-carousel-inner">
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/003.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Shoes</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/010.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Glasses</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/048.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Watches</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/118.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Socks</span>
+                </a>
+              </div>
+            </div>
+            <a
+               class="carousel-control-prev"
+               tabindex="0"
+               role="button"
+               data-slide="prev"
+               >
+              <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                    ></span>
+            </a>
+            <a
+               class="carousel-control-next"
+               tabindex="0"
+               role="button"
+               data-slide="next"
+               >
+              <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                    ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Categories-->
+
+    <!--Section: Recommended-->
+    <section class="mb-4">
+      <div class="card">
+        <div class="card-body">
+          <p><strong>Recommended items</strong></p>
+
+          <div class="multi-carousel text-center">
+            <div class="multi-carousel-inner">
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/004.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Sneakers</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/005.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Autumn</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/006.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Books</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/017.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Smartphones</span>
+                </a>
+              </div>
+            </div>
+            <a
+               class="carousel-control-prev"
+               tabindex="0"
+               role="button"
+               data-slide="prev"
+               >
+              <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                    ></span>
+            </a>
+            <a
+               class="carousel-control-next"
+               tabindex="0"
+               role="button"
+               data-slide="next"
+               >
+              <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                    ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Recommended-->
+
+    <!--Section: Trending-->
+    <section class="mb-4">
+      <div class="card">
+        <div class="card-body">
+          <p><strong>Trending deals</strong></p>
+
+          <div class="multi-carousel text-center">
+            <div class="multi-carousel-inner">
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/021.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Natural cosmetics</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/028.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Plants</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/029.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Suits</span>
+                </a>
+              </div>
+              <div class="multi-carousel-item">
+                <a
+                   href="#!"
+                   class="ripple text-reset"
+                   data-ripple-color="light"
+                   >
+                  <img
+                       src="https://mdbootstrap.com/img/new/ecommerce/horizontal/031.jpg"
+                       class="d-block w-100 mb-2"
+                       alt="..."
+                       />
+                  <span>Tablets</span>
+                </a>
+              </div>
+            </div>
+            <a
+               class="carousel-control-prev"
+               tabindex="0"
+               role="button"
+               data-slide="prev"
+               >
+              <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                    ></span>
+            </a>
+            <a
+               class="carousel-control-next"
+               tabindex="0"
+               role="button"
+               data-slide="next"
+               >
+              <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                    ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Trending-->
+
+    <!--Section: MSC-->
+    <section>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Holiday Deals</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/041.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Deals 4 stars and up</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/001.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Shop beauty gifts</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/025.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Gift ideas</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/018.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: MSC-->
+
+    <!--Section: Banner-->
+    <section class="mb-4">
+      <div
+           class="bg-image ripple shadow-1-strong rounded"
+           data-ripple-color="light"
+           style="max-height: 250px"
+           >
+        <img
+             src="https://mdbootstrap.com/img/new/slides/311.jpg"
+             class="w-100"
+             />
+        <a href="#!">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+            <div
+                 class="d-flex justify-content-center align-items-center h-100"
+                 >
+              <div class="text-center">
+                <h2 class="text-white mb-3">Grant a few birthday wishes</h2>
+                <button type="button" class="btn btn-outline-light">
+                  Shop gift cards
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div
+                 class="mask"
+                 style="background-color: rgba(251, 251, 251, 0.2)"
+                 ></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!--Section: Banner-->
+
+    <!--Section: MSC-->
+    <section>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Deals on top brands</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/031.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Artistic deals</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/067.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Original offers</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/084.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center pb-0">
+              <p class="card-title mb-3">
+                <strong>Fashionable this season</strong>
+              </p>
+
+              <a href="#!" class="ripple" data-ripple-color="light">
+                <img
+                     src="https://mdbootstrap.com/img/new/ecommerce/vertical/085.jpg"
+                     class="w-100"
+                     alt=""
+                     />
+              </a>
+            </div>
+            <div class="card-footer border-0 text-center">
+              <a
+                 class="btn btn-link"
+                 href="#!"
+                 role="button"
+                 data-ripple-color="dark"
+                 >Learn more</a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: MSC-->
+  </div>
+</main>
+<!--Main layout-->
+
+<!--Footer-->
+<footer class="text-center text-white" style="background-color: #232f3e">
+  <a
+     href="#intro-carousel"
+     role="button"
+     class="btn btn-primary btn-block rounded-0 shadow-0 py-3"
+     style="background-color: #37475a"
+     data-smooth-scroll="smooth-scroll"
+     >
+    Back to top
+  </a>
+
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <p><strong>About us</strong></p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+          atque ea quis molestias. Fugiat pariatur maxime quis culpa
+          corporis vitae repudiandae aliquam voluptatem veniam, est atque
+          cumque eum delectus sint!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <p><strong>Useful links</strong></p>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">Privacy policy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Media</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Job offers</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Cooperation</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <p><strong>Products</strong></p>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Electronics</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Fashion</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Beauty</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Automotive</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 mb-4 mb-lg-0">
+        <p><strong>Support</strong></p>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Complaints</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Help center</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Community</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/"
+       >MDBootstrap.com</a
+      >
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
